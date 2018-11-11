@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type"; charset="UTF-8"; content="text/html, initial-scale=1.0, user-scalable=no"; name="viewport"><title>Echologie.org</title><style>.è{border-radius:1em 1em 1em 0;background-image:linear-gradient(rgba(38,207,97,.25),rgba(38,207,97,.75)1em);padding:1em 1em 1em 1em;margin:1em 25% 1.5em 1em;text-align:left;border-left:1ex solid #26ce61;font-size:large;box-shadow:1ex 1ex 1ex #999}.é{border-radius:1em 1em 0 1em;padding:1em 1em 1em 1em;margin:1em 1em 1.5em 25%;text-align:right;border-right:1ex solid #624a98;background-image:linear-gradient(rgba(104,74,156,.25),rgba(104,74,156,.75)1em);font-size:large;box-shadow:1ex 1ex 1ex #999}</style></head><body>
+
+<div style="margin: 0 auto;width:960px;max-width:100vw" id="d"></div>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" style="position:fixed;bottom:1em;right:1em" width="20% "height="20%" version="1.1">
+<g transform="translate(13.8,9)" stroke-width="0" fill="white">
+<circle cx="1.2" cy="6" r="15" fill="rgb(137,211,158)" opacity="1"/>
+<circle cx="0" cy="0" r="2"/>
+<path d="M-1.5,-2.598076211353316A3,3 0 0,0-2.598076211353316,1.5A5,5 0 0,1-1.5,-6.840716898472603A3,3 0 0,0-1.5,-2.598076211353316"/>
+<path d="M0,-3A3,3 0 0,1 3,0A6,6 0 0,1 11.485281374238571,0A8,8 0 0,0 0,-3"/>
+<path d="M-1.5,2.598076211353316A3,3 0 0,0 2.598076211353316,1.5A13,13 0 0,1-1.5,19.56863895983046A12,12 0 0,0-1.5,2.598076211353316"/>
+</g>
+</svg>
+
+<script type="text/javascript">var d = "Bonjour.µ\
+Bonjour.µ\
+Je suis tombé par hasard sur votre site et je me demandais ce qu'on pouvait y trouver.µ\
+Des informations et des documents à destination de mes élèves, mais évidement libre à chacun d'y prendre ce qu'il souhaite.µ\
+Et vous êtes ?µ\
+Professeur de mathématiques.µ\
+Ah ! Je vois. Encore un de ses blogs où un enseignant raconte le cosinus à sa façon.µ\
+À vrai dire, il y a assez peu de mathématiques sur ce blog, si tant est que ce terme soit adapté à la structure du site. Je parle plutôt des principes qui sous-tendent les mécanismes de l'apprentissage.µ\
+Et de quel genre de principes parle-t-on, au juste ?µ\
+Eh bien, Vous pouvez lire <a title='Dialogues pédagogiques' href='DialoguesPedagogiques/0.html'>mes articles</a>. J'espère qu'ils vous éclaireront. Les principes en question sont parfois très anciens, parfois très modernes, mais ils sont malheureusement toujours mal connus, alors qu'ils sont susceptibles d'apporter une aide précieuse dans une multitude de situations d'apprentissage, ou même de la vie courante.µ\
+Je vois...µ\
+Si vous souhaitez être tenu au courant de la publication des articles à venir, vous trouverez des liens vers les réseaux sociaux où je publie les sorties des articles, ainsi que des boutons de partage sur chaque page.µ\
+Dans ce cas, je ne me priverai pas d'y faire un tour.";
+d = '<p class=\"é\">'+ d.replace(/µ([^µ]*)µ/g, '</p><p class=\"è\">$1</p><p class=\"é\">')+'</p>';
+document.getElementById("d").innerHTML += d;
+</script>
+</body></html>
