@@ -17,29 +17,21 @@ http://www.patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Texte à écri
                 ██████╔╝╚██████╔╝    ███████║██║   ██║   ███████╗
                 ╚═════╝  ╚═════╝     ╚══════╝╚═╝   ╚═╝   ╚══════╝
 
- d0 : String
-> d0 = "var d0 = `Bonjour.
->Bonjour.
->Je suis tombé par hasard sur votre site et je me demandais ce qu'on pouvait y trouver.
->Des informations et des documents à destination de mes élèves, mais évidement libre à chacun d'y prendre ce qu'il souhaite.
->Et vous êtes ?
->Professeur de mathématiques.
->Ah ! Je vois. Encore un de ses blogs où un enseignant raconte le cosinus à sa façon.
->À vrai dire, il y a assez peu de mathématiques sur ce blog, si tant est que ce terme soit adapté à la structure du site. Je parle plutôt des principes qui sous-tendent les mécanismes de l'apprentissage.
->Et de quel genre de principes parle-t-on, au juste ?
->Eh bien, Vous pouvez lire <a title='Dialogues pédagogiques' href='DialoguesPedagogiques/0.html'>mes articles</a>. J'espère qu'ils vous éclaireront. Les principes en question sont parfois très anciens, parfois très modernes, mais ils sont malheureusement toujours mal connus, alors qu'ils sont susceptibles d'apporter une aide précieuse dans une multitude de situations d'apprentissage, ou même de la vie courante.
->Je vois...
->Si vous souhaitez être tenu au courant de la publication des articles à venir, vous trouverez des liens vers les réseaux sociaux où je publie les sorties des articles, ainsi que des boutons de partage sur chaque page.
->Dans ce cas, je ne me priverai pas d'y faire un tour.`;"
 
- main : IO (Either FileError ())
- main = writeFile "test.js" d0
 
-> main : IO ()
-> main = do
->     Right file <- openFile "Test.js" WriteTruncate
->     fPutStr file d0
->     closeFile file
+
+Sans que je sache pourquoi, la fonction writeFile ne fonctionne pas. Alors pour remplacer le simple renomage que serait :
+
+ enregistrer : String -> String -> IO (Either FileError ())
+ enregistrer nomFichier contenu = writeFile nomFichier contenu
+
+j'ai dû opter pour un code plus détaillé, qui a le mérite de marcher, mais qui présente le désagrément de ne pas couvrir les cas potentiels d'erreurs (du genre j'écris dans un fichier ouvert dans un autre programme...)
+
+> enregistrer : String -> String -> IO ()
+> enregistrer nomFichier contenu = do
+>     Right fichier <- openFile nomFichier WriteTruncate
+>     fPutStr fichier contenu
+>     closeFile fichier
 
 
 
@@ -74,19 +66,7 @@ Deux personnages interviennent :
 
 On veut pouvoir écrire un dialogue sans préciser qui parle à chaque réplique, et donc sans avoir à préciser le style.
 
-d0 = "var d0 = `Bonjour.
-Bonjour.
-Je suis tombé par hasard sur votre site et je me demandais ce qu'on pouvait y trouver.
-Des informations et des documents à destination de mes élèves, mais évidement libre à chacun d'y prendre ce qu'il souhaite.
-Et vous êtes ?
-Professeur de mathématiques.
-Ah ! Je vois. Encore un de ses blogs où un enseignant raconte le cosinus à sa façon.
-À vrai dire, il y a assez peu de mathématiques sur ce blog, si tant est que ce terme soit adapté à la structure du site. Je parle plutôt des principes qui sous-tendent les mécanismes de l'apprentissage.
-Et de quel genre de principes parle-t-on, au juste ?
-Eh bien, Vous pouvez lire <a title='Dialogues pédagogiques' href='DialoguesPedagogiques/0.html'>mes articles</a>. J'espère qu'ils vous éclaireront. Les principes en question sont parfois très anciens, parfois très modernes, mais ils sont malheureusement toujours mal connus, alors qu'ils sont susceptibles d'apporter une aide précieuse dans une multitude de situations d'apprentissage, ou même de la vie courante.
-Je vois...
-Si vous souhaitez être tenu au courant de la publication des articles à venir, vous trouverez des liens vers les réseaux sociaux où je publie les sorties des articles, ainsi que des boutons de partage sur chaque page.
-Dans ce cas, je ne me priverai pas d'y faire un tour.`;"
+
 
 d = '<p class=\"é\">'+ d.replace(/µ([^µ]*)µ/g, '</p><p class=\"è\">$1</p><p class=\"é\">')+'</p>';
 document.getElementById("d").innerHTML += d;
@@ -116,10 +96,9 @@ styleDesDialogues =
             font-size: 12pt
     |]
 
-{- Pour utiliser MathJax pour afficher les formules LaTex, je suis censé utiliser le script suivant :
+Pour utiliser MathJax pour afficher les formules LaTex, je suis censé utiliser le script suivant :
+
    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
-   mais je ne sais pas comment faire apparaître le async à la fin, ni quelles sont les conséquences en terme de performances. -}
-mathJax = addScriptRemote "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
 
 
 
@@ -132,34 +111,21 @@ mathJax = addScriptRemote "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/
     ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝  ╚═════╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
 -}
 
+> Introduction : String
+> Introduction = "var i=`Bonjour.
+>Bonjour.
+>Je suis tombé par hasard sur votre site et je me demandais ce qu'on pouvait y trouver.
+>Des informations et des documents à destination de mes élèves, mais évidement libre à chacun d'y prendre ce qu'il souhaite.
+>Et vous êtes ?
+>Professeur de mathématiques.
+>Ah ! Je vois. Encore un de ses blogs où un enseignant raconte le cosinus à sa façon.
+>À vrai dire, il y a assez peu de mathématiques sur ce blog, si tant est que ce terme soit adapté à la structure du site. Je parle plutôt des principes qui sous-tendent les mécanismes de l'apprentissage.
+>Et de quel genre de principes parle-t-on, au juste ?
+>Eh bien, Vous pouvez lire <a title='Dialogues pédagogiques' href='DialoguesPedagogiques/0.html'>mes articles</a>. J'espère qu'ils vous éclaireront. Les principes en question sont parfois très anciens, parfois très modernes, mais ils sont malheureusement toujours mal connus, alors qu'ils sont susceptibles d'apporter une aide précieuse dans une multitude de situations d'apprentissage, ou même de la vie courante.
+>Je vois...
+>Si vous souhaitez être tenu au courant de la publication des articles à venir, vous trouverez des liens vers les réseaux sociaux où je publie les sorties des articles, ainsi que des boutons de partage sur chaque page.
+>Dans ce cas, je ne me priverai pas d'y faire un tour.`;"
 
-introduction :: Widget
-introduction = do
-    setTitle "Echologie.org"
-    toWidget styleDesDialogues
-    toWidget introductionDebut
-    toWidget introductionMilieu
-    toWidget introductionFin
-
-introductionDebut = widgetDialogue Eleve [st|Bonjour.
-Bonjour.
-Je suis tombé par hasard sur votre site et je me demandais ce qu'on pouvait y trouver.
-Des informations et des documents à destination de mes élèves, mais évidement libre à chacun d'y prendre ce qu'il souhaite.
-Et vous êtes ?
-Professeur de mathématiques.
-Ah ! Je vois. Encore un de ses blogs où un enseignant raconte le cosinus à sa façon.
-À vrai dire, il y a assez peu de mathématiques sur ce blog, si tant est que ce terme soit adapté à la structure du site. Je parle plutôt des principes qui sous-tendent les mécanismes de l'apprentissage.
-Et de quel genre de principes parle-t-on, au juste ?|]
-
-introductionMilieu = [hamlet|
-<p class="è">
-    Eh bien, Vous pouvez lire #
-    <a title="Dialogues pédagogiques" href=@{DialoguesPedagogiquesR 0}>mes articles
-    . J'espère qu'ils vous éclaireront. Les principes en question sont parfois très anciens, parfois très modernes, mais ils sont malheureusement toujours mal connus, alors qu'ils sont susceptibles d'apporter une aide précieuse dans une multitude de situations d'apprentissage, ou même de la vie courante.|]
-
-introductionFin = widgetDialogue Eleve [st|Je vois...
-Si vous souhaitez être tenu au courant de la publication des articles à venir, vous trouverez des liens vers les réseaux sociaux où je publie les sorties des articles, ainsi que des boutons de partage sur chaque page.
-Dans ce cas, je ne me priverai pas d'y faire un tour.|]
 
 
 
