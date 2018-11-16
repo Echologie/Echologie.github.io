@@ -1,9 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" version="1.1">
-<g transform="translate(13.8,9)" stroke-width="0" fill="white">
-<circle cx="1.2" cy="6" r="15" fill="rgb(137,211,158)" opacity="1"/>
-<circle cx="0" cy="0" r="2"/>
-<path d="M-1.5,-2.598076211353316A3,3 0 0,0-2.598076211353316,1.5A5,5 0 0,1-1.5,-6.840716898472603A3,3 0 0,0-1.5,-2.598076211353316"/>
-<path d="M0,-3A3,3 0 0,1 3,0A6,6 0 0,1 11.485281374238571,0A8,8 0 0,0 0,-3"/>
-<path d="M-1.5,2.598076211353316A3,3 0 0,0 2.598076211353316,1.5A13,13 0 0,1-1.5,19.56863895983046A12,12 0 0,0-1.5,2.598076211353316"/>
-</g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30"
+   height="30"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="Echologo.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs18" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2160"
+     inkscape:window-height="1346"
+     id="namedview16"
+     showgrid="false"
+     inkscape:zoom="37.133333"
+     inkscape:cx="15"
+     inkscape:cy="15"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <circle
+     style="opacity:1;fill:#64c29b;stroke-width:0;fill-opacity:1"
+     id="circle2"
+     r="15"
+     cy="15"
+     cx="15" />
+  <circle
+     style="fill:#ffffff;stroke-width:0"
+     id="circle4"
+     r="2"
+     cy="9"
+     cx="13.8" />
+  <path
+     style="fill:#ffffff;stroke-width:0"
+     inkscape:connector-curvature="0"
+     id="path6"
+     d="M 12.3,6.4019238 A 3,3 0 0 0 11.201924,10.5 5,5 0 0 1 12.3,2.1592831 a 3,3 0 0 0 0,4.2426407" />
+  <path
+     style="fill:#ffffff;stroke-width:0"
+     inkscape:connector-curvature="0"
+     id="path8"
+     d="m 13.8,6 a 3,3 0 0 1 3,3 6,6 0 0 1 8.485281,0 A 8,8 0 0 0 13.8,6" />
+  <path
+     style="fill:#ffffff;stroke-width:0"
+     inkscape:connector-curvature="0"
+     id="path10"
+     d="M 12.3,11.598076 A 3,3 0 0 0 16.398076,10.5 13,13 0 0 1 12.3,28.568639 a 12,12 0 0 0 0,-16.970563" />
 </svg>
