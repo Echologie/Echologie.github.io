@@ -7,7 +7,7 @@ Je vais te raconter une petite histoire qui devrait t’éclairer.
 Ah oui, j’adore les histoires!
 J’ai suivi un élève en grandes difficultés il y a quelques années. Il était en terminale, mais il était totalement incapable de mener à bien un calcul nécessitant plus de cinq ou six étapes.
 Comme par exemple?
-Comme par exemple frac{frac23+frac45}{3−(frac17)^2}
+Comme par exemple \\(\\displaystyle\\frac{\\frac23+\\frac45}{3−(\\frac17)^2}\\)
 Oui, ça j’y arrive. C’est quand il y a des lettres que je m’embrouille.
 Nous y reviendrons. En tout cas, cet élève là, il n’y avait pas eu moyen de lui faire apprendre même les règles de calcul les plus simples.
 En même temps s’il ne foutait rien…
@@ -18,13 +18,7 @@ Qu’avait-il de si différent ?
 Je vais te raconter la discussion que nous avons eu, après que ses parents m’ont engagé, en désespoir de cause.
 Comme les miens, quoi.
 Bien plus encore. Ils étaient convaincus que leur fils était un cas désespéré, et m’avaient engagé pour « sauver les meubles ».
-C’est triste de ne plus croire en ses propres enfants.
-<div class='è'>
-        Rassure-toi. C’est une histoire qui fini bien. Voici comment a commencé le fameux dialogue qui aura permis de déverrouiller les blocages qu’avait l’élève :
-        ^{dialogueDansLeDialogue}
-        J’arrête là le dialogue. Ce serait un peu long de raconter comment il a réussi à sentir les formules. L’important c’est qu’il y soit parvenu.
-</div>
-Si je te montre (displaystylefrac13+frac35) qu'est-ce que tu vois ?
+C’est triste de ne plus croire en ses propres enfants.`)+`<div class="è">Rassure-toi. C’est une histoire qui fini bien. Voici comment a commencé le fameux dialogue qui aura permis de déverrouiller les blocages qu’avait l’élève :`+Y(`Si je te montre \\(\\displaystyle\\frac13+\\frac35\\) qu'est-ce que tu vois ?
 Des fractions.
 Eh bien vois-tu, ce n'est pas ce que tu devrais voir.
 Si vous me dites qu'il ne faut pas que je vois des fractions quand y en a, je vais vraiment complètement m'embrouiller.
@@ -36,7 +30,7 @@ Pourtant, il y a plus d'oreilles que d'ânes.
 Dans ce cas là, pourquoi ne pas dire "Tiens! des pates." ? Il y en a encore plus!
 Tout à fait. Tu as pourtant choisi de ne parler que de l'âne.
 Parce-que les oreilles, les pâtes... Tout ça, ça va ensemble.
-Exactement. Ça forme un tout. Eh c'est bien le problème. Quand tu regardes (displaystylefrac13+frac35) tu ne vois pas un tout. Tu vois deux oreilles! Dans ces conditions, ça ne te sert à rien de connaître tes règles de calcul. Puisque tu ne sais pas en face de quoi tu te trouves.
+Exactement. Ça forme un tout. Eh c'est bien le problème. Quand tu regardes \\(\\displaystyle\\frac13+\\frac35\\) tu ne vois pas un tout. Tu vois deux oreilles! Dans ces conditions, ça ne te sert à rien de connaître tes règles de calcul. Puisque tu ne sais pas en face de quoi tu te trouves.
 Oui, c'est ce que je ressens. Et donc si les oreilles sont les fractions, l'âne c'est censé être quoi?
 Ah, Ah! C'est là toute la question. Pour l'instant les mathématiques te font peur, et ça te brouille la vue. Sans doute es-tu bon dans quelque chose.
 Ouais. Le baskett.
@@ -46,9 +40,7 @@ Comme s'il faisait partie de ton corps?
 Ouais, comme s'il faisait partie de mon corps. C'est un peu ça.
 Eh bien c'est ce que nous allons apprendre à faire avec cette formule.
 Genre je vais sentir la formule dans mon corps?
-Oui. Et plus vite que tu ne le crois!
-
-Humm… Et ça l’a aidé ?
+Oui. Et plus vite que tu ne le crois!`)+`J’arrête là le dialogue. Ce serait un peu long de raconter comment il a réussi à sentir les formules. L’important c’est qu’il y soit parvenu.</div>`+x(`Humm… Et ça l’a aidé ?
 Absolument.
 C’est bizarre.
 Quoi donc ?
@@ -65,7 +57,7 @@ La question c’est : Est-ce que toi tu vois ce que tu veux dire ? L’esprit hu
 Ok. Mais ce serait bien pratique pour moi que mon esprit voit les formules comme vous. J’aurais de meilleurs résultats. Pourtant ce n’est pas le cas.
 Oui, ce serait plus pratique pour toi. Mais pas forcément pour ton esprit. C’est pour ça que la motivation c’est tellement important.
 Mon esprit ce n’est pas moi ?
-Pas tout à fait. Mais on en parlera un autre jour. En attendant qu’est-ce que tu vois toi quand je te montre (displaystylefrac13+frac35) ?
+Pas tout à fait. Mais on en parlera un autre jour. En attendant qu’est-ce que tu vois toi quand je te montre \\(\\displaystyle\\frac13+\\frac35\\) ?
 Bah une somme de fractions.
 Exactement ! Et c’est pour ça que toi tu ne te trompes pas. Tu vois bien la formule comme un tout.
 Je vois la même chose que vous alors ?
@@ -91,4 +83,4 @@ C’est donc un méta-dialogue pédagogique. Un élève qui sera dans une situat
 En tout cas, il m’a aidé aussi. Même si mon cas est différent, ça m’a donné confiance en moi. Je commence à croire que je pourrais n’être pas si mauvais en maths.
 Je suis heureux de l’entendre. Et si quelqu’un nous écoute, j’espère que ce méta-méta-dialogue l’aidera également.
 Qui pourrait bien nous entendre?
-Va savoir… En tout cas il faudrait que je t’apprenne à <a title='La forme des formules' href='#'>voir les formules autrement.`);c("a1",a1)
+Va savoir… En tout cas il faudrait que je t’apprenne à voir les formules autrement.`);c("a1",a1)

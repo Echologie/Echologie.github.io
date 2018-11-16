@@ -27,4 +27,4 @@ Non. Mais il suffit de me suivre sur les réseaux sociaux ou de s'abonner au flu
 Ouais. D'ailleurs je vois qu'il y a des boutons de partage. Je vais vous faire de la pub sur les réseaux que j'utilise. Après tout c&rsquo;est un peu mes dialogues aussi.
 C'est une très bonne initiative. J'espère que d'autres suivront ton exemple, afin que les techniques que je t'ai apprises puissent atteindre un maximum d'élèves.
 Ok. Et donc si on arrive sur cette page pour la première fois, par quel dialogue faudra-t-il commencer ?
-Par celui qui concerne la question la plus importante que je ne t'ai jamais posée : <a title='Méta-dialogue pédagogique' href='#'>Qu'est-ce que tu vois ?</a>`);c("a0",a0)
+Par celui qui concerne la question la plus importante que je ne t'ai jamais posée : Qu'est-ce que tu vois ?`);c("a0",a0)
