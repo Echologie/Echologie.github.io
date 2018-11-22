@@ -1,5 +1,5 @@
 let i=X(`Bonjour.
-Bonjour.
+Bonjour, bonjour !
 Je suis tombé par hasard sur votre site et je suis curieux de que l'on peut y trouver.
 On y trouve des conseils et des documents à destination de mes élèves.
 Et vous êtes ?
